@@ -6,7 +6,7 @@ module.exports = {
         res.status(200).send(savedRecipes)
     }, 
     saveRecipe: (req, res) => {
-        // console.log(req.body) 
+        console.log(req.body) 
         const {recipe} = req.body
         recipe.id = id
         id++ 
@@ -17,12 +17,7 @@ module.exports = {
         const {id} = req.params
         const {details} = req.body
         const index = savedRecipes.findIndex(ele => ele.id === +id)
-
-        console.log(savedRecipes)
-        console.log(id)
-        console.log(index)
         savedRecipes[index].details = details
-        console.log(savedRecipes)
         res.status(200).send(savedRecipes)
     },
     deleteRecipe: (req, res) => {

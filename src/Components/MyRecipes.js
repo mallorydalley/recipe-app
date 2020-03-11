@@ -2,7 +2,6 @@ import React from 'react';
 import IndividualSavedRecipe from './IndividualSavedRecipe'
 
 class MyRecipes extends React.Component{
-    // console.log(props)
     constructor(props){
         super(props)
         this.state = {
@@ -16,15 +15,6 @@ class MyRecipes extends React.Component{
             
             <div className="my-recipe-container">
                 <h2 className="heading">My Recipes</h2>
-                <div className='search-box'>
-                    {/* <input className='search-label'
-                        value={this.state.query}
-                        placeholder='Search...'
-                        id='search-input'
-                        type='text'
-                        onChange={e => this.handleInput(e.target.value)}
-                    /> */}
-                </div>
             </div> 
 
             <div className='show-recipes'>

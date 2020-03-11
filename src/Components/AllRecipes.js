@@ -47,12 +47,10 @@ class AllRecipes extends React.Component{
 
         return (
             <div>
-            {/* Search Bar */}
                 {this.state.isSearching
                     ? (
                 <div>
                     <div className="container">
-                        {/*Heading*/}
                         <h2 className="heading">Find Your Next Favorite Dish</h2>
                         <div className='search-box'>
                             <input className='search-label'
@@ -72,7 +70,6 @@ class AllRecipes extends React.Component{
                 )
                 : (
                         <div className="container">
-                            {/*Heading*/}
                             <h2 className="heading">Find Your Next Favorite Dish</h2>
                             <div className='search-box'>
                                 <input className='search-label'

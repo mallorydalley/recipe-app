@@ -25,7 +25,6 @@ body{
   z-index: 2;
   color: white;
   background-color: #1d1b23
-  /* background: rgba(34,34,34,0.25); */
 }
 
 
@@ -106,7 +105,6 @@ body{
 	top: -10px;
 	font-size: 24px;
 	color: #555;
-	/* right: 18px; */
 }
 
 /* Individual Recipe */
@@ -126,7 +124,6 @@ body{
   min-height: 300px;
   min-width: 320px;
   max-width: 350px;
-  /* margin: 0 0 1em; */
   display: inline-block;
   display:flex;
   align-items: center;
@@ -141,18 +138,13 @@ body{
   width: 100%;
   margin: 0px;
   overflow: hidden;
-  /* position: relative; */
   display: flex;
   align-items: center;
 }
 
 .images{
-  /* position: absolute; */
   height: auto;
   width: 100%;
-  /* right: 0;
-  bottom: 0; */
-  /* object-fit: cover; */
 }
 
 .ingredients{
@@ -168,8 +160,6 @@ body{
 
 .edit-input{
   width: 270px;
-  /* display: flex;
-  align-items: center; */
 }
 
 /* My Recipes */
@@ -192,8 +182,6 @@ body{
 
 
 /* Individual Saved Recipe */
-
-
 button {
   color: #1d1b23;
   background: transparent;
@@ -222,5 +210,3 @@ button {
    color: white; 
    border: 2px solid #cf1b1b;
   }
-
-  /* button:focus {outline:0;} */

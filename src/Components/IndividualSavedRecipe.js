@@ -17,17 +17,6 @@ class IndividualSavedRecipe extends React.Component {
     }
     render(){
         const { id, recipeName, image, details, recipe, editRecipe, deleteRecipe } = this.props
-
-        // const listedIngredients = Array.from(details)
-
-        // <ol className='ingredients'>
-        //     {details.map((ele, i) => (
-        //         <li
-        //             className='ingredient'
-        //             key={i}>{ele}
-        //         </li>
-        //     ))}
-        // </ol>
         
         console.log(this.state.editDetails)
         return (
@@ -43,30 +32,24 @@ class IndividualSavedRecipe extends React.Component {
                     {this.state.isEditing
                     ? (
                     <div>
-                        {/* <textarea
-                            defaultValue={details}
-                            onChange={e => this.handleEditDetails(e.target.value)} 
-                        >
-                        </textarea> */}
-                                <ol className='ingredients'>
-                                    {details.map((ele, i) => {
-                                        // console.log(ele)
-                                        return (<input
-                                            className='edit-input'
-                                            key={i}
-                                            onChange={e => this.handleEditDetails(e.target.value, i)} 
-                                            defaultValue={ele}
-                                        />)
-                                    })}
-                                </ol> 
+                        <ol className='ingredients'>
+                            {details.map((ele, i) => {
+                                // console.log(ele)
+                                return (<input
+                                    className='edit-input'
+                                    key={i}
+                                    onChange={e => this.handleEditDetails(e.target.value, i)} 
+                                    defaultValue={ele}
+                                />)
+                            })}
+                        </ol> 
                     
                         <button 
                             onClick={() => { 
-                                // console.log(recipe.id) 
-                                // console.log(recipe)
                                 editRecipe(recipe.id, this.state.editDetails)
                                 this.toggleEdit()
-                                        console.log(details)
+                                console.log(recipe.id)
+                                console.log(this.state.editDetails)
                         }}
                         >
                             Save
@@ -77,8 +60,6 @@ class IndividualSavedRecipe extends React.Component {
                         <div>
                                 <ol className='ingredients'>
                                     {details.map((ele, i) => {
-                                        // console.log(ele)
-
                                         return (<li
                                             className='ingredient'
                                             key={i}
@@ -87,7 +68,6 @@ class IndividualSavedRecipe extends React.Component {
                                         </li>)
                                     })}                         
                                 </ol>  
-                                {/* <p>{details}</p> */}
                             <div className='buttons'>
                                 <button 
                                     className='delete-button'
